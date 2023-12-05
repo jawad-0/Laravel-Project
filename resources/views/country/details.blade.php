@@ -54,7 +54,7 @@
 
 </head>
 <body class="body">
-    <h1 style="text-align:center; color:white; margin-top:30px; font-family:'Times New Roman';"><b>國 家 數 據 ` 🔥- - COUNTRIES DATA - -🔥 ` 國 家 數 據</b></h1></br>
+    <h1 style="text-align:center; color:white; margin-top:30px; font-family:'Times New Roman';"><b>國 家 數 據 ` 🔥- - COUNTRY DETAILS - -🔥 ` 國 家 數 據</b></h1></br>
     {{-- <h1 style="text-align:center; color:white; margin-top:30px; font-family:'Times New Roman';"><b>- - COUNTRY DETAILS - -</b></h1></br> --}}
     <div class="grid-container">
 
