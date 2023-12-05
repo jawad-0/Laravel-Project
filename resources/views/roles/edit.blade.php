@@ -1,9 +1,10 @@
 @extends('layouts.app')
 @section('content')
+<div style="margin-left:450px">
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2>Edit Role</h2>
+            <h2 style="margin-left:200px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight:bold;">Edit Role</h2>
         </div>
         <div class="pull-right">
             <a class="btn btn-primary" href="{{ route('roles.index') }}"> Back</a>
@@ -20,12 +21,13 @@
         </ul>
     </div>
 @endif
+<br>
 {!! Form::model($role, ['method' => 'PATCH','route' => ['roles.update', $role->id]]) !!}
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Name:</strong>
-            {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control')) !!}
+            {!! Form::text('name', null, array('placeholder' => 'Name','class' => 'form-control', 'style' => 'width: 300px' )) !!}
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
@@ -39,10 +41,10 @@
             @endforeach
         </div>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+    <div style="margin-left: 15px;">
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
 </div>
+</div>
 {!! Form::close() !!}
 @endsection
-{{-- <p class="text-center text-primary"><small>Tutorial by LaravelTuts.com</small></p> --}}

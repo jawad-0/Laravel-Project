@@ -38,8 +38,8 @@
 <table class="table1">
     <tr>
         <th>No</th>
-        <th>Name</th>
-        <th width="300px">Action</th>
+        <th>Role Name</th>
+        <th width="300px">Actions</th>
     </tr>
 
     @foreach ($roles as $key => $role)
@@ -61,5 +61,4 @@
     @endforeach
 </table>
 {{-- {!! $roles->render() !!} --}}
-{{-- <p class="text-center text-primary"><small>Tutorial by LaravelTuts.com</small></p> --}}
 @endsection
