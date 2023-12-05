@@ -6,11 +6,9 @@
             background-image: url(/images/BG6.jpg);
             background-size: auto;
         }
-
         img{
             border-radius: 15px;
         }
-
         .grid-container {
         color: white;
         display: grid;
