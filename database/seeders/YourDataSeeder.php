@@ -20,21 +20,21 @@ class YourDataSeeder extends Seeder
         ]);
         //Example using raw database query
         Company::create([
-            // 'name' => 'Iphone14',
-            // 'email' => 'iphone14@gmail.com',
-            // 'logo' => '/storage/images/1690280341download2.jpg',
-            // 'website' => 'www.iphone14.org'
+            'name' => 'Iphone14',
+            'email' => 'iphone14@gmail.com',
+            'logo' => '/storage/images/1690280341download2.jpg',
+            'website' => 'www.iphone14.org'
         ]);
         Employee::create([
-            // 'firstname' => 'Muhammad',
-            // 'lastname' => 'Kashif',
-            // 'company' => 'Redmi',
-            // 'email' => 'sk47@47.com',
-            // 'phone' => '03484211366'
+            'firstname' => 'Muhammad',
+            'lastname' => 'Kashif',
+            'company' => 'Redmi',
+            'email' => 'sk47@47.com',
+            'phone' => '03484211366'
         ]);
         Product::create([
-            // 'name' => 'OPPO',
-            // 'detail' => 'Superb In Use'
+            'name' => 'OPPO',
+            'detail' => 'Superb In Use'
         ]);
         cities::create([
               'name' => 'OPP',
