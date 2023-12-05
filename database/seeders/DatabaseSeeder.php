@@ -10,7 +10,7 @@ class DatabaseSeeder extends Seeder
 {
     public function run()
     {
-        //product::factory()->count(80)->create();
+        product::factory()->count(80)->create();
         $this->call(YourDataSeeder::class);
     }
 }
