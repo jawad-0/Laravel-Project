@@ -7,7 +7,8 @@ use Illuminate\Support\Facades\Http;
 class CountriesController extends Controller
 {
     public function index(){
-        $data = countries::all();
+        // $data = countries::all();
+        $data = countries::orderBy('name')->get();
         return view ('country.countries')->with('countries', $data);
     }
 

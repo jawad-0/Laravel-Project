@@ -23,7 +23,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $passdata = "- - - This is the first laravel website designed by SK.";
+        $passdata = "~ ~ ~ This is the first laravel website designed by SK GUJJAR 🙂.";
         return view('layouts/app2', compact('passdata'));
     }
 }

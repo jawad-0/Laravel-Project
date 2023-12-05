@@ -1,10 +1,26 @@
 <html>
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
         .div{
             padding-left: 20px;
         }
-        .h1{
+        .h1 {
             font-family: "Times New Roman", Times, serif;
+            color: #0511fa;
+        }
+
+        .h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .p{
+            font-size: 20px;
+            line-height: 1.5;
+            margin-left: 2em;
+            margin-right: 2em;
         }
     </style>
     <body class="body">
@@ -16,7 +32,7 @@
     </h2>
     </header>
 </br>
-<p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+<p class="p">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
     Welcome to our gaming wonderland, where fantasy and reality intertwine,
      and adrenaline-pumping adventures await! Prepare to immerse yourself in
       a world of pixelated dreams and high-octane challenges as we bring you

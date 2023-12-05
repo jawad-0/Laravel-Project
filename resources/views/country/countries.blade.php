@@ -16,15 +16,27 @@
         display: grid;
         padding-left: 30px;
         padding-right: 30px;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
         }
 
         .grid-item {
-        background-color: #00989d;
-        border: 2px solid white;
-        border-radius: 20px;
-        padding: 20px;
+        position: relative;
+        padding: 15px;
+        background-color: #232324;
+        border: 3px solid;
+        border-image: linear-gradient(45deg, #ff0000, #ffaa00, #aaff00, #00ffaa, #00aaff, #0000ff, #aa00ff) 1;
+        border-image-slice: 1;
+        }
+        .grid-item img {
+        margin-top: 30px;
+        }
+        .gradient-text {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-weight: bold;
+        background: linear-gradient(45deg, #03e8fc, #00ff91);
+        -webkit-background-clip: text;
+        color: transparent;
         }
 
     </style>
@@ -43,24 +55,24 @@
     <link rel="shortcut icon" href="/images/logo2.jpg">
 </head>
 <body class="body">
-    <h1 style="text-align:center; color:white; margin-top:30px; font-family:'Times New Roman';"><b>- - COUNTRIES DATA - -</b></h1></br>
+    <h1 style="text-align:center; color:white; margin-top:30px; font-family:'Times New Roman';"><b>國 家 數 據 ` 🔥- - COUNTRIES DATA - -🔥 ` 國 家 數 據</b></h1></br>
     <div class="grid-container">
 
-        @foreach ($countries as $item)        
-        <div class="grid-item"><img src="{{ $item->image }}" width="600px" height="300px"></div>
-        
+        @foreach ($countries as $item)
+        <div class="grid-item"><img src="{{ $item->image }}" width="300px" height="170px"></div>
+
         <div class="grid-item">
-            <h2>Country : {{ $item->name }}</h2>
-            <h2>Short Abriviation : {{ $item->short_a }}</h2>
-            <h2>Long Abriviation : {{ $item->long_a }}</h2>
-            <h2>Region : {{ $item->region }}</h2>
-            <h2>Area : {{ $item->area }}</h2>
-            <h2>Population : {{ $item->population }}</h2>
+            <h5 class="gradient-text">Country : {{ $item->name }}</h5>
+            <h5 class="gradient-text">Short Abriviation : {{ $item->short_a }}</h5>
+            <h5 class="gradient-text">Long Abriviation : {{ $item->long_a }}</h5>
+            <h5 class="gradient-text">Region : {{ $item->region }}</h5>
+            <h5 class="gradient-text">Area : {{ $item->area }}</h5>
+            <h5 class="gradient-text">Population : {{ $item->population }}</h5>
             <a style="color:white; float:right;" href = "{{ route('details', ['code' => $item->long_a]) }}" >
                 View More Details</a>
         </div>
 
         @endforeach
-      </div>          
+      </div>
 </body>
-</html> 
+</html>
