@@ -1,12 +1,29 @@
 @extends('layouts.app')
 @section('content')
+<style>
+     .table1 {
+        width: 70%;
+        margin : 0 auto;
+        border: 5px groove black;
+    }
+    .table1 th{
+        background-color: white;
+    }
+    .table1 th, .table1 td {
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        border: 2px dashed black;
+    }
+
+</style>
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2 style="text-align: center;">USERS MANAGEMENT</h2>
+            <h2 style="text-align: center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight:bold;">USERS MANAGEMENT</h2>
         </div>
         <div class="pull-right">
-            <a style="margin-left:10px;" class="btn btn-success" href="{{ route('users.create') }}"> Create New User</a>
+            <a style="margin-left:75%;" class="btn btn-success" href="{{ route('users.create') }}"> Create New User</a>
         </div>
     </div>
 </div>
@@ -16,7 +33,7 @@
     <p>{{ $message }}</p>
 </div>
 @endif
-<table class="table table-bordered">
+<table class="table1">
     <tr>
         <th>No</th>
         <th>Name</th>

@@ -1,13 +1,30 @@
 @extends('layouts.app')
 @section('content')
+<style>
+    .table1 {
+        width: 50%;
+        margin : 0 auto;
+        border: 5px groove black;
+    }
+    .table1 th{
+        background-color: white;
+    }
+    .table1 th, .table1 td {
+        font-weight: bold;
+        text-align: center;
+        padding: 5px;
+        border: 2px dashed black;
+    }
+
+</style>
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2 style="text-align: center;">ROLES MANAGEMENT</h2>
+            <h2 style="text-align: center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-weight:bold;">ROLES MANAGEMENT</h2>
         </div>
         <div class="pull-right">
         @can('role-create')
-            <a style="margin-left:10px;" class="btn btn-success" href="{{ route('roles.create') }}"> Create New Role</a>
+            <a style="margin-left:65%;" class="btn btn-success" href="{{ route('roles.create') }}"> Create New Role</a>
             @endcan
         </div>
     </div>
@@ -18,13 +35,13 @@
         <p>{{ $message }}</p>
     </div>
 @endif
-<table class="table table-bordered">
+<table class="table1">
     <tr>
         <th>No</th>
         <th>Name</th>
         <th width="300px">Action</th>
     </tr>
-    
+
     @foreach ($roles as $key => $role)
     <tr>
         <td>{{ $role->id }}</td>
